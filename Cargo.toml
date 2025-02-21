@@ -1,0 +1,18 @@
+[package]
+name = "scream_cipher"
+version = "1.0.0"
+edition = "2021"
+description = "A CLI tool and library for encrypting and decrypting messages using the scream cypher."
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "scream_cipher"
+path = "src/lib.rs"
+
+[[bin]]
+name = "scream"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5.30", features = ["cargo"] }
+phf = { version = "0.11.3", features = ["macros"] }
