@@ -39,12 +39,12 @@
 //! encrypt and decrypt messages:
 //!
 //! ```rs
-//! let ciphertext = scream_cipher::encrypt("This is a test.");
+//! let ciphertext = scream_cypher::encrypt("This is a test.");
 //!
 //! println!("Your message: \"{}\"", ciphertext);
 //! // Your message: "Āa̰ảã ảã a āáãā."
 //!
-//! let plaintext = scream_cipher::decrypt(cyphertext);
+//! let plaintext = scream_cypher::decrypt(cyphertext);
 //!
 //! println!("Your message: \"{}\"", plaintext);
 //! // Your message: "This is a test."
@@ -91,7 +91,7 @@ pub const CYPHER_MAP: Map<&'static str, &'static str> = phf_map! {
 /// ## Example
 ///
 /// ```
-/// let ciphertext = scream_cipher::encrypt("This is a test.");
+/// let ciphertext = scream_cypher::encrypt("This is a test.");
 ///
 /// println!("Your message: \"{}\"", ciphertext);
 /// /// Your message: "Āa̰ảã ảã a āáãā."
@@ -116,7 +116,7 @@ pub fn encrypt(message: &str) -> String {
 /// ## Example
 ///
 /// ```
-/// let plaintext = scream_cipher::decrypt("Āa̰ảã ảã a āáãā.");
+/// let plaintext = scream_cypher::decrypt("Āa̰ảã ảã a āáãā.");
 ///
 /// println!("Your message: \"{}\"", plaintext);
 /// /// Your message: "This is a test."
@@ -140,14 +140,14 @@ mod test {
 
     #[test]
     fn encrypted_messages_decrypt_to_original_messages() {
-        let messages = vec![
+        let messages = [
             "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
             "abcdefghijklmnopqrstuvwxyz",
             "This is a test of the emergency broadcast system.",
         ];
 
         for &message in messages.iter() {
-            assert_eq!(message, decrypt(&encrypt(&message.to_owned())));
+            assert_eq!(message, decrypt(&encrypt(message)));
         }
     }
 }
