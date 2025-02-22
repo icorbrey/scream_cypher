@@ -91,7 +91,7 @@ pub const CYPHER_MAP: Map<&'static str, &'static str> = phf_map! {
 /// ## Example
 ///
 /// ```
-///	let ciphertext = scream_cipher::encrypt("This is a test.");
+/// let ciphertext = scream_cipher::encrypt("This is a test.");
 ///
 /// println!("Your message: \"{}\"", ciphertext);
 /// /// Your message: "Āa̰ảã ảã a āáãā."
@@ -116,7 +116,7 @@ pub fn encrypt(message: &str) -> String {
 /// ## Example
 ///
 /// ```
-///	let plaintext = scream_cipher::decrypt("Āa̰ảã ảã a āáãā.");
+/// let plaintext = scream_cipher::decrypt("Āa̰ảã ảã a āáãā.");
 ///
 /// println!("Your message: \"{}\"", plaintext);
 /// /// Your message: "This is a test."

@@ -1,5 +1,10 @@
 # `scream_cypher`
 
+[![Crates.io Version](https://img.shields.io/crates/v/scream_cypher)](https://crates.io/crates/scream_cypher/versions)
+[![Crates.io Size](https://img.shields.io/crates/size/scream_cypher)](https://crates.io/crates/scream_cypher)
+[![docs.rs](https://img.shields.io/docsrs/scream_cypher)](https://docs.rs/scream_cypher)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/icorbrey)](https://github.com/sponsors/icorbrey)
+
 In the **SCREAM CYPHER**, messages consist of all As with different letters
 distinguished using diacritics. This is a tool that provides both a CLI tool
 and a library to encrypt and decrypt text using the scream cypher.

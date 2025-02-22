@@ -1,9 +1,13 @@
 [package]
 name = "scream_cypher"
+description = "A CLI tool and library for encrypting and decrypting messages using the scream cypher."
+repository = "https://github.com/icorbrey/scream_cypher"
+keywords = ["cli", "cryptography", "cypher", "xkcd"]
+categories = ["command-line-utilities", "cryptography"]
+authors = ["Isaac Corbrey <icorbrey@gmail.com>"]
+license = "MIT OR Apache-2.0"
 version = "1.0.0"
 edition = "2021"
-description = "A CLI tool and library for encrypting and decrypting messages using the scream cypher."
-license = "MIT OR Apache-2.0"
 
 [lib]
 name = "scream_cypher"
