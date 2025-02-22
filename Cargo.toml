@@ -1,5 +1,5 @@
 [package]
-name = "scream_cipher"
+name = "scream_cypher"
 version = "1.0.0"
 edition = "2021"
 description = "A CLI tool and library for encrypting and decrypting messages using the scream cypher."
