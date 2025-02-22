@@ -24,7 +24,7 @@ fn main() {
                 "{}",
                 sub_matches
                     .get_one::<String>("message")
-                    .map(|message| scream_cipher::encrypt(message))
+                    .map(|message| scream_cypher::encrypt(message))
                     .expect("<message> should have been populated")
             )
         }
@@ -33,7 +33,7 @@ fn main() {
                 "{}",
                 sub_matches
                     .get_one::<String>("message")
-                    .map(|message| scream_cipher::decrypt(message))
+                    .map(|message| scream_cypher::decrypt(message))
                     .expect("<message> should have been populated")
             )
         }

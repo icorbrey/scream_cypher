@@ -6,7 +6,7 @@ description = "A CLI tool and library for encrypting and decrypting messages usi
 license = "MIT OR Apache-2.0"
 
 [lib]
-name = "scream_cipher"
+name = "scream_cypher"
 path = "src/lib.rs"
 
 [[bin]]
