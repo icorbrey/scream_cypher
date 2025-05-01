@@ -42,7 +42,7 @@ Add `scream_cypher` to your project:
 cargo add scream_cypher
 ```
 
-You can then use `scream_cypher::encrypt` and `scream_cypher::encrypt` to
+You can then use `scream_cypher::encrypt` and `scream_cypher::decrypt` to
 encrypt and decrypt messages:
 
 ```rs
